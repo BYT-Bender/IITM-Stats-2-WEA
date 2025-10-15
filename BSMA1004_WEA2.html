@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Extra Activity 2</title>
+    <link rel="stylesheet" href="assets/styles/subject.css">
+    <script src="assets/scripts/svg-loader.min.js"></script>
+    <script src="assets/scripts/script.js" defer></script>
+</head>
+<body>
+    <div id="navbar">
+        <div class="logo-wrapper">
+            <h2>Activity.</h2>
+        </div>
+        <div class="nav-list">
+            <a href="#home">
+                <div class="nav-item">
+                    <div class="icon"></div>
+                    <span>Home</span>
+                </div>
+            </a>
+            <a href="#about">
+                <div class="nav-item">
+                    <div class="icon"></div>
+                    <span>About</span>
+                </div>
+            </a>
+            <a href="#dataset">
+                <div class="nav-item">
+                    <div class="icon"></div>
+                    <span>Dataset</span>
+                </div>
+            </a>
+            <a href="#analysis">
+                <div class="nav-item">
+                    <div class="icon"></div>
+                    <span>Analysis</span>
+                </div>
+            </a>
+            <a href="#preview">
+                <div class="nav-item">
+                    <div class="icon"></div>
+                    <span>Preview</span>
+                </div>
+            </a>
+            <a href="#sources">
+                <div class="nav-item">
+                    <div class="icon"></div>
+                    <span>Sources</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <section class="banner" id="home">
+        <div class="bg-img" style="background-image: url(assets/media/images/subject-bg/mountain.jpg);">
+            <!-- <img src="assets/media/images/subject-bg/stat.png" alt=""> -->
+        </div>
+        <div class="subject-title">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="box-corner"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="box-corner"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="box-corner"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="box-corner"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path></svg>
+            <span>Weekly Extra Activity 2</span>
+        </div>
+    </section>
+
+    <section class="activity-description" id="about">
+        <div class="inner-section-wrapper">
+            <h1>Description</h1>
+            <p>In this activity, I performed a Monte Carlo simulation to find the probability of each face (1 through 6) appearing when a fair six-sided die is rolled. The goal was to compare the theoretical probability with the experimental probability obtained from the simulation.</p>
+            <p>I conducted the simulation for three different scenarios: rolling the die 10 times, 50 times, and 100 times.</p>
+            <ul>
+                <li>Theoretical Probability: For a fair die, the probability of any single face appearing is 1/6, which is approximately 0.167 or 16.67%. This value is constant and based on mathematical theory.</li>
+                <li>Monte Carlo Simulation: I used Python to simulate the die rolls, counted the occurrences of each face, and calculated the experimental probability for each case (10, 50, and 100 rolls).</li>
+            </ul>
+            <p>The results showed that as the number of rolls increased, the experimental probabilities from the simulation tended to get closer to the theoretical probability, demonstrating a fundamental principle of statistics.</p>
+        </div>
+    </section>
+
+    <section class="gs-embed" id="dataset">
+        <div class="inner-section-wrapper">
+            <header>
+                <h1>Google Collab Notebook</h1>
+                <a href="https://docs.google.com/spreadsheets/d/1PsVrW3Qsux4VBRD8gJQ6FM4D-ekU2sG8eKuNA6LJWXM/edit?usp=sharing" class="external-link" target="_blank">
+                    <svg data-src="assets/media/svgs/link-45deg.svg" alt="Link"></svg> Link
+                </a>
+            </header>
+            <iframe src="https://colab.research.google.com/drive/19VdEZcdFuWbdhr3bhGkBx4vmUDcV3KQ6?authuser=2#scrollTo=b3nsAJiVpuvD"></iframe>
+        </div>
+    </section>
+
+    <section class="activity-description" id="analysis">
+        <div class="inner-section-wrapper">
+            <h1>Analysis</h1>
+            <h3>Description of a Row (Observation)</h3>
+            <p>A single row in this dataset represents one individual student. It is a complete record of a student's demographic background (gender, race, and parental education), their educational support (lunch program and test preparation course status), and their numerical scores in three different subjects (Math, Reading, and Writing).</p>
+
+            <h3>Description of Columns (Variables)</h3>
+            <table class="data-description-table">
+                <tr>
+                    <th>Column Name</th>
+                    <th>Type of Data</th>
+                    <th>Description in My Own Words</th>
+                </tr>
+                <tr>
+                    <td>gender</td>
+                    <td>Categorical</td>
+                    <td>The student's self-reported gender (e.g., male or female).</td>
+                </tr>
+                <tr>
+                    <td>race/ethnicity</td>
+                    <td>Categorical</td>
+                    <td>The student's racial or ethnic grouping (e.g., group A, B, C, D, or E).</td>
+                </tr>
+                <tr>
+                    <td>parental level of education</td>
+                    <td>Categorical</td>
+                    <td>The highest level of education attained by the student's parent (e.g., bachelor's degree, some college, etc.).</td>
+                </tr>
+                <tr>
+                    <td>lunch</td>
+                    <td>Categorical</td>
+                    <td>The type of school lunch the student receives, which acts as a proxy for their economic background (standard or free/reduced).</td>
+                </tr>
+                <tr>
+                    <td>test preparation course</td>
+                    <td>Categorical</td>
+                    <td>Whether the student completed a test preparation course or not (completed or none).</td>
+                </tr>
+                <tr>
+                    <td>math score</td>
+                    <td>Quantitative</td>
+                    <td>The student's numerical score on the math test.</td>
+                </tr>
+                <tr>
+                    <td>reading score</td>
+                    <td>Quantitative</td>
+                    <td>The student's numerical score on the reading test.</td>
+                </tr>
+                <tr>
+                    <td>writing score</td>
+                    <td>Quantitative</td>
+                    <td>The student's numerical score on the writing test.</td>
+                </tr>
+            </table>
+
+            <h3>Interesting Observation</h3>
+            <p>I analyzed the effect of the student's lunch program and test preparation course status on their performance, using the mean score as my primary statistic.</p>
+
+            <h4>Observation: Test Preparation Course</h4>
+            <p>The analysis showed a clear benefit to students who completed the test preparation course.</p>
+            <table>
+                <tr>
+                    <th>Test Preparation Course</th>
+                    <th>Average Math Score</th>
+                    <th>Average Reading Score</th>
+                    <th>Average Writing Score</th>
+                </tr>
+                <tr>
+                    <td>completed</td>
+                    <td>69.70</td>
+                    <td>73.89</td>
+                    <td>74.42</td>
+                </tr>
+                <tr>
+                    <td>none</td>
+                    <td>64.08</td>
+                    <td>66.53</td>
+                    <td>64.50</td>
+                </tr>
+            </table>
+
+            <h4>Secondary Observation: Lunch Program</h4>
+            <p>The type of school lunch a student received also had a dramatic impact on performance. Students who received the "standard" lunch (implying a more stable economic background) consistently outperformed those who received the "free/reduced" lunch.</p>
+            <table>
+                <tr>
+                    <td>Lunch Type</td>
+                    <td>Average Math Score</td>
+                    <td>Average Reading Score</td>
+                    <td>Average Writing Score</td>
+                </tr>
+                <tr>
+                    <td>standard</td>
+                    <td>70.03</td>
+                    <td>71.65</td>
+                    <td>70.82</td>
+                </tr>
+                <tr>
+                    <td>free/reduced</td>
+                    <td>58.92</td>
+                    <td>64.65</td>
+                    <td>63.02</td>
+                </tr>
+            </table>
+
+            <h3>What I Learnt/Observed:</h3>
+            <p>The data reveals two powerful, yet distinct, factors influencing student performance. Firstly, a direct academic intervention like completing a test preparation course is highly effective, leading to significant score improvements, most notably an average increase of nearly 10 points in the Writing score. Secondly, socioeconomic factors, as represented by the type of school lunch, are also a profound predictor of success. Students receiving a standard lunch consistently outperformed those on a free/reduced lunch by a substantial margin, demonstrating a gap of over 11 points in the Math score. This contrast suggests that while academic support can significantly boost performance, external economic circumstances have an equally, if not more, fundamental impact on a student's baseline academic achievement.</p>
+        </div>
+    </section>
+
+    <section class="preview" id="preview">
+        <div class="inner-section-wrapper">
+            <header>
+                <h1>Preview</h1>
+                <a href="index.html" class="external-link" target="_blank">
+                    <svg data-src="assets/media/svgs/link-45deg.svg" alt="Link"></svg> Link
+                </a>
+            </header>
+            <img src="assets/media/images/preview_1.png" alt="" class="preview-image">
+            <header>
+                <a href="BSMA1004.html" class="external-link" target="_blank">
+                    <svg data-src="assets/media/svgs/link-45deg.svg" alt="Link"></svg> Link
+                </a>
+            </header>
+            <img src="assets/media/images/preview_2.png" alt="" class="preview-image">
+        </div>
+    </section>
+    
+    <section class="sources" id="sources">
+        <div class="inner-section-wrapper">
+            <h1>Sources</h1>
+            <p><b>Activity 1.1: </b><a href="BSMA1004.html">Statistics II</a></p>
+            <p><b>Activity 1.2: </b><a href="https://docs.google.com/spreadsheets/d/1PsVrW3Qsux4VBRD8gJQ6FM4D-ekU2sG8eKuNA6LJWXM/edit?usp=sharing">Dataset</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/sourabh-srivastva/">
+                <div class="link">
+                    <svg data-src="assets/media/svgs/social-media/linkedin.svg" alt=""></svg>
+                </div>
+            </a>
+            <a href="https://github.com/BYT-Bender">
+                <div class="link">
+                    <svg data-src="assets/media/svgs/social-media/github.svg" alt=""></svg>
+                </div>
+            </a>
+        </div>
+        <div class="copyright-line">© 2025 Sourabh Srivastva / BYT-Bender, All rights reserved</div>
+    </footer>
+</body>
+</html>
