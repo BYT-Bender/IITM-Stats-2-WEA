@@ -81,13 +81,139 @@
 
     <section class="activity-description" id="analysis">
         <div class="inner-section-wrapper">
-            <h1>Analysis</h1>
+            <h1>Analysis and Conclusion</h1>
             <p>The simulation results from rolling the die 10, 50, and 100 times clearly demonstrate the Law of Large Numbers. By comparing the Monte Carlo probabilities from each experiment to the constant theoretical probability of approximately 0.17 (or 1/6), we can draw the following conclusions:</p>
             <p>For 10 Throws: The results are highly varied and not close to the theoretical probability. For example, faces '1' and '2' appeared with a probability of 0.30, which is almost double the expected value. This small sample size leads to significant random fluctuation.</p>
             <p>For 50 Throws: The probabilities are beginning to stabilize and get closer to the theoretical value. The highest probability was 0.20 (for faces '2' and '4') and the lowest was 0.14 (for faces '1', '5', and '6'). The spread is much smaller compared to the 10-throw simulation.</p>
             <p>For 100 Throws: These results are, on average, the closest to the theoretical probability of 0.17. While there is still some randomness, such as face '2' appearing with a probability of 0.22, most of the values are clustering more tightly around the expected value.</p>
             <p>Conclusion: This activity confirms that while Monte Carlo probabilities can be unpredictable with a small number of trials, they become more accurate and converge toward the theoretical probability as the number of trials increases.</p>
-
+            <br>
+            <h4>Results for 10 Throws</h4>
+            <br>
+            <table>
+                <tr>
+                    <th>Face</th>
+                    <th>Occurrences</th>
+                    <th>Monte Carlo Probability</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>0.30</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>0.30</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>0.10</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>0.10</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>0.10</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>1</td>
+                    <td>0.10</td>
+                </tr>
+            </table>
+            <h4>Results for 50 Throws</h4>
+            <br>
+            <table>
+                <tr>
+                    <th>Face</th>
+                    <th>Occurrences</th>
+                    <th>Monte Carlo Probability</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>7</td>
+                    <td>0.14</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>10</td>
+                    <td>0.20</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>9</td>
+                    <td>0.18</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>10</td>
+                    <td>0.20</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>0.14</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>0.14</td>
+                </tr>
+            </table>
+            <h4>Results for 100 Throws</h4>
+            <br>
+            <table>
+                <tr>
+                    <th>Face</th>
+                    <th>Occurrences</th>
+                    <th>Monte Carlo Probability</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>14</td>
+                    <td>0.14</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>22</td>
+                    <td>0.22</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>14</td>
+                    <td>0.14</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>13</td>
+                    <td>0.13</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>18</td>
+                    <td>0.18</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>19</td>
+                    <td>0.19</td>
+                </tr>
+            </table>
+            <br>
+            <h3>Visualizing the Law of Large Numbers</h3>
+            <img src="assets/media/images/activity-2-graph.png" alt="">
+            <P>The graph above clearly illustrates the core concept of this activity.</P>
+            <ul>
+                <li>The blue line (Monte Carlo Simulation) is very unstable when the number of throws is low (on the left side of the graph), showing significant random fluctuations.</li>
+                <li>As the number of throws increases (moving to the right), the blue line stabilizes and gets progressively closer to the dashed red line (Theoretical Probability).</li>
+            </ul>
+            <p>This visualization provides powerful evidence that the accuracy of a Monte Carlo simulation improves with a larger number of trials, perfectly confirming the Law of Large Numbers.</p>
         </div>
     </section>
 
