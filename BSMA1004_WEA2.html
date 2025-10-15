@@ -29,25 +29,13 @@
             <a href="#dataset">
                 <div class="nav-item">
                     <div class="icon"></div>
-                    <span>Dataset</span>
+                    <span>Colab Notebook</span>
                 </div>
             </a>
             <a href="#analysis">
                 <div class="nav-item">
                     <div class="icon"></div>
                     <span>Analysis</span>
-                </div>
-            </a>
-            <a href="#preview">
-                <div class="nav-item">
-                    <div class="icon"></div>
-                    <span>Preview</span>
-                </div>
-            </a>
-            <a href="#sources">
-                <div class="nav-item">
-                    <div class="icon"></div>
-                    <span>Sources</span>
                 </div>
             </a>
         </div>
@@ -82,147 +70,24 @@
     <section class="gs-embed" id="dataset">
         <div class="inner-section-wrapper">
             <header>
-                <h1>Google Collab Notebook</h1>
-                <a href="https://docs.google.com/spreadsheets/d/1PsVrW3Qsux4VBRD8gJQ6FM4D-ekU2sG8eKuNA6LJWXM/edit?usp=sharing" class="external-link" target="_blank">
+                <h1>Google Colab Notebook</h1>
+                <a href="https://colab.research.google.com/drive/1S9qadL0ITNaT5-JR4zglr94zXG5ALLvw?usp=sharing" class="external-link" target="_blank">
                     <svg data-src="assets/media/svgs/link-45deg.svg" alt="Link"></svg> Link
                 </a>
             </header>
-            <iframe src="https://colab.research.google.com/drive/19VdEZcdFuWbdhr3bhGkBx4vmUDcV3KQ6?authuser=2#scrollTo=b3nsAJiVpuvD"></iframe>
+            <img src="assets/media/images/activity-2-screenshot.png"></img>
         </div>
     </section>
 
     <section class="activity-description" id="analysis">
         <div class="inner-section-wrapper">
             <h1>Analysis</h1>
-            <h3>Description of a Row (Observation)</h3>
-            <p>A single row in this dataset represents one individual student. It is a complete record of a student's demographic background (gender, race, and parental education), their educational support (lunch program and test preparation course status), and their numerical scores in three different subjects (Math, Reading, and Writing).</p>
+            <p>The simulation results from rolling the die 10, 50, and 100 times clearly demonstrate the Law of Large Numbers. By comparing the Monte Carlo probabilities from each experiment to the constant theoretical probability of approximately 0.17 (or 1/6), we can draw the following conclusions:</p>
+            <p>For 10 Throws: The results are highly varied and not close to the theoretical probability. For example, faces '1' and '2' appeared with a probability of 0.30, which is almost double the expected value. This small sample size leads to significant random fluctuation.</p>
+            <p>For 50 Throws: The probabilities are beginning to stabilize and get closer to the theoretical value. The highest probability was 0.20 (for faces '2' and '4') and the lowest was 0.14 (for faces '1', '5', and '6'). The spread is much smaller compared to the 10-throw simulation.</p>
+            <p>For 100 Throws: These results are, on average, the closest to the theoretical probability of 0.17. While there is still some randomness, such as face '2' appearing with a probability of 0.22, most of the values are clustering more tightly around the expected value.</p>
+            <p>Conclusion: This activity confirms that while Monte Carlo probabilities can be unpredictable with a small number of trials, they become more accurate and converge toward the theoretical probability as the number of trials increases.</p>
 
-            <h3>Description of Columns (Variables)</h3>
-            <table class="data-description-table">
-                <tr>
-                    <th>Column Name</th>
-                    <th>Type of Data</th>
-                    <th>Description in My Own Words</th>
-                </tr>
-                <tr>
-                    <td>gender</td>
-                    <td>Categorical</td>
-                    <td>The student's self-reported gender (e.g., male or female).</td>
-                </tr>
-                <tr>
-                    <td>race/ethnicity</td>
-                    <td>Categorical</td>
-                    <td>The student's racial or ethnic grouping (e.g., group A, B, C, D, or E).</td>
-                </tr>
-                <tr>
-                    <td>parental level of education</td>
-                    <td>Categorical</td>
-                    <td>The highest level of education attained by the student's parent (e.g., bachelor's degree, some college, etc.).</td>
-                </tr>
-                <tr>
-                    <td>lunch</td>
-                    <td>Categorical</td>
-                    <td>The type of school lunch the student receives, which acts as a proxy for their economic background (standard or free/reduced).</td>
-                </tr>
-                <tr>
-                    <td>test preparation course</td>
-                    <td>Categorical</td>
-                    <td>Whether the student completed a test preparation course or not (completed or none).</td>
-                </tr>
-                <tr>
-                    <td>math score</td>
-                    <td>Quantitative</td>
-                    <td>The student's numerical score on the math test.</td>
-                </tr>
-                <tr>
-                    <td>reading score</td>
-                    <td>Quantitative</td>
-                    <td>The student's numerical score on the reading test.</td>
-                </tr>
-                <tr>
-                    <td>writing score</td>
-                    <td>Quantitative</td>
-                    <td>The student's numerical score on the writing test.</td>
-                </tr>
-            </table>
-
-            <h3>Interesting Observation</h3>
-            <p>I analyzed the effect of the student's lunch program and test preparation course status on their performance, using the mean score as my primary statistic.</p>
-
-            <h4>Observation: Test Preparation Course</h4>
-            <p>The analysis showed a clear benefit to students who completed the test preparation course.</p>
-            <table>
-                <tr>
-                    <th>Test Preparation Course</th>
-                    <th>Average Math Score</th>
-                    <th>Average Reading Score</th>
-                    <th>Average Writing Score</th>
-                </tr>
-                <tr>
-                    <td>completed</td>
-                    <td>69.70</td>
-                    <td>73.89</td>
-                    <td>74.42</td>
-                </tr>
-                <tr>
-                    <td>none</td>
-                    <td>64.08</td>
-                    <td>66.53</td>
-                    <td>64.50</td>
-                </tr>
-            </table>
-
-            <h4>Secondary Observation: Lunch Program</h4>
-            <p>The type of school lunch a student received also had a dramatic impact on performance. Students who received the "standard" lunch (implying a more stable economic background) consistently outperformed those who received the "free/reduced" lunch.</p>
-            <table>
-                <tr>
-                    <td>Lunch Type</td>
-                    <td>Average Math Score</td>
-                    <td>Average Reading Score</td>
-                    <td>Average Writing Score</td>
-                </tr>
-                <tr>
-                    <td>standard</td>
-                    <td>70.03</td>
-                    <td>71.65</td>
-                    <td>70.82</td>
-                </tr>
-                <tr>
-                    <td>free/reduced</td>
-                    <td>58.92</td>
-                    <td>64.65</td>
-                    <td>63.02</td>
-                </tr>
-            </table>
-
-            <h3>What I Learnt/Observed:</h3>
-            <p>The data reveals two powerful, yet distinct, factors influencing student performance. Firstly, a direct academic intervention like completing a test preparation course is highly effective, leading to significant score improvements, most notably an average increase of nearly 10 points in the Writing score. Secondly, socioeconomic factors, as represented by the type of school lunch, are also a profound predictor of success. Students receiving a standard lunch consistently outperformed those on a free/reduced lunch by a substantial margin, demonstrating a gap of over 11 points in the Math score. This contrast suggests that while academic support can significantly boost performance, external economic circumstances have an equally, if not more, fundamental impact on a student's baseline academic achievement.</p>
-        </div>
-    </section>
-
-    <section class="preview" id="preview">
-        <div class="inner-section-wrapper">
-            <header>
-                <h1>Preview</h1>
-                <a href="index.html" class="external-link" target="_blank">
-                    <svg data-src="assets/media/svgs/link-45deg.svg" alt="Link"></svg> Link
-                </a>
-            </header>
-            <img src="assets/media/images/preview_1.png" alt="" class="preview-image">
-            <header>
-                <a href="BSMA1004.html" class="external-link" target="_blank">
-                    <svg data-src="assets/media/svgs/link-45deg.svg" alt="Link"></svg> Link
-                </a>
-            </header>
-            <img src="assets/media/images/preview_2.png" alt="" class="preview-image">
-        </div>
-    </section>
-    
-    <section class="sources" id="sources">
-        <div class="inner-section-wrapper">
-            <h1>Sources</h1>
-            <p><b>Activity 1.1: </b><a href="BSMA1004.html">Statistics II</a></p>
-            <p><b>Activity 1.2: </b><a href="https://docs.google.com/spreadsheets/d/1PsVrW3Qsux4VBRD8gJQ6FM4D-ekU2sG8eKuNA6LJWXM/edit?usp=sharing">Dataset</a></p>
         </div>
     </section>
 
